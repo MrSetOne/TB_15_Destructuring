@@ -46,9 +46,7 @@ next()
 // 2. Ejercicios spread/rest
 // Escribe una función llamada sumEveryOther que pueda recibir cualquier cantidad de números y devuelva la suma de todos los demás argumentos.
 
-const sumEveryOther = (...valor) => {
-    return console.log(valor.reduce((a, b) => a + b))
-}
+const sumEveryOther = (...valor) => console.log(valor.reduce((a, b) => a + b))
 
 sumEveryOther(6, 8, 2, 3, 1); //20
 sumEveryOther(11, 3, 12); //26 
