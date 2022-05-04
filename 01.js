@@ -118,12 +118,15 @@ next();
 // Escriba una función llamada combineAllArrays que pueda recibir cualquier cantidad de arrays como argumentos y los combine todos en un solo array.
 
 const combineAllArrays = (...value) => {
-    console.log(value)
     let result = [].concat(...value)
     console.log(result)
 }
 
-combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1]) //[3, 6, 7, 8, 2, 7, 3, 1]
+// const combineAllArrays = (...value) => console.log(value.reduce((a, b) => [...a, ...b])) //Version de Ger ¡NO VA!
+
+// const combineAllArrays = (...value) => console.log(value.flat())
+
+combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1]); //[3, 6, 7, 8, 2, 7, 3, 1]
 combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]); //[2, 7, 3, 1, 2, 7, 4, 12, 2, 44, 22, 7, 3, 1]
 
 next();
