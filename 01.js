@@ -122,7 +122,7 @@ const combineAllArrays = (...value) => {
     console.log(result)
 }
 
-// const combineAllArrays = (...value) => console.log(value.reduce((a, b) => [...a, ...b])) //Version de Ger ¡NO VA!
+// const combineAllArrays = (...value) => console.log(value.reduce((a, b) => [...a, ...b])) //Version de Ger ¡¡¡SI VA!!!
 
 // const combineAllArrays = (...value) => console.log(value.flat())
 
